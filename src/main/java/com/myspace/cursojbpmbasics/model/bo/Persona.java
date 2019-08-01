@@ -18,6 +18,15 @@ public class Persona implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Segundo Apellido")
 	private java.lang.String segundoApellido;
 
+	@org.kie.api.definition.type.Label("Edad")
+	private int edad;
+
+	@org.kie.api.definition.type.Label(value = "Tipo ID")
+	private java.lang.String tipoid;
+
+	@org.kie.api.definition.type.Label(value = "Numero ID")
+	private int numeroid;
+
 	public Persona() {
 	}
 
@@ -53,13 +62,41 @@ public class Persona implements java.io.Serializable {
 		this.segundoApellido = segundoApellido;
 	}
 
+	public int getEdad() {
+		return this.edad;
+	}
+
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+
+	public java.lang.String getTipoid() {
+		return this.tipoid;
+	}
+
+	public void setTipoid(java.lang.String tipoid) {
+		this.tipoid = tipoid;
+	}
+
+	public int getNumeroid() {
+		return this.numeroid;
+	}
+
+	public void setNumeroid(int numeroid) {
+		this.numeroid = numeroid;
+	}
+
 	public Persona(java.lang.String primerNombre,
 			java.lang.String segundoNombre, java.lang.String primerApellido,
-			java.lang.String segundoApellido) {
+			java.lang.String segundoApellido, int edad,
+			java.lang.String tipoid, int numeroid) {
 		this.primerNombre = primerNombre;
 		this.segundoNombre = segundoNombre;
 		this.primerApellido = primerApellido;
 		this.segundoApellido = segundoApellido;
+		this.edad = edad;
+		this.tipoid = tipoid;
+		this.numeroid = numeroid;
 	}
 
 }
