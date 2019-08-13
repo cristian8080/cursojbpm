@@ -12,7 +12,7 @@
       <include>true</include>
       <metadata>
         <id>local</id>
-        <url>/opt/jboss/.m2/repository</url>
+        <url>C:\Users\KB/.m2/repository</url>
         <source>LOCAL</source>
       </metadata>
     </repository>
